@@ -2,6 +2,9 @@
 
 A responsive web page built with HTML and CSS featuring a navbar,HERO section, product cards and footer.
 
+On last Edition I started including JavaScript on the project.
+Using options like forms and dark mode button.
+
 ---
 
 ## Features
@@ -35,6 +38,8 @@ project-folder/
 │     └── style.css
 │── assets/
 │     └── images
+│── js/
+│     └── scripts.js
 │── README.md
 ```
 
