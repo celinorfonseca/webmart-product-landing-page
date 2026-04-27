@@ -12,21 +12,51 @@
     <header class="navbar"> 
         <img class="navbar__logo" src="assets/images/webmart-logo-gip.png" alt="Webmart logo">
         <nav>
+            <button class="menu-btn">☰</button>
+            
             <ul class="navbar__links">
                 <li><a class="navbar__about-us" href="about-us.html">About Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1 class="hero__title">Websites Store</h1>
-        <h3 class="hero__subtitle">Here you can find the best site to advertise your products</h3>
-        <a class="hero__button" href="products.html">Check it out</a>
-    </section>
-   
-<!-- Footer -->
- <footer class="footer">©2026 Webmart</footer>
-     
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1 class="hero__title">Websites Store</h1>
+            <h3 class="hero__subtitle">Here you can find the best site to advertise your products</h3>
+            <a class="hero__button" href="products.html">Check it out</a>
+        </section>
+
+
+
+        <!-- Modal -->
+        <button class="open-modal">Subscribe</button>
+
+        <div class="modal">
+            <div class="modal-content">
+                <p>Subscribe to our service</p>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <form class="form">
+            <input type="text" id="name" placeholder="Your name">
+            <input type="email" id="email" placeholder="Your email">
+            <button type="submit">Submit</button>
+        </form>
+
+        <p class="error"></p>
+<!-- Dark mode -->
+<button class="dark-mode-btn">🌙</button>
+
+    <!-- Footer -->
+    <footer class="footer">©2026 Webmart</footer>
+
+
+
+    <!-- Script -->
+
+    <script src="js/script.js"></script>    
 </body>
 </html>
