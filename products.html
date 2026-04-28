@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webmart*</title>
-    <link rel="stylesheet" href="css/style.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Webmart</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Navibar -->
-    <header class="navbar"> 
-        <img class="navbar__logo" src="assets/images/webmart-logo-gip.png" alt="Webmart logo">
-        <nav>
-            <ul class="navbar__links">
-                <li><a class="navbar__home" href="index.html">Home</a></li>
-                <li><a class="navbar__about-us" href="about-us.html">About Us</a></li>
-            </ul>
-        </nav>
-    </section>
 
-      <!-- Cards Section (reuse your work) -->
-     
-        <section class="cards">
-            <div class="card">
-                <h2 class="card__title">Basic Plan</h2>
-                <p class="card__description">Advertise up to 5 (five) products</p>
-            </div>
-            
-            <div class="card card--pro">
-                <h2 class="card__title">Pro Plan</h2>
-                <p class="card__description">Advertise up to 10 (ten) products</p>
-            </div>
-            
-            <div class="card card--enterprise">
-                <h2 class="card__title">Enterprise Plan</h2>
-                <p class="card__description">Advertise up to 20 (twenty) products</p>
-            </div>
-        </section>
+<header class="navbar">
+  <div class="navbar__container">
+    <img class="navbar__logo" src="assets/images/webmart-logo-gip.png" alt="Webmart logo">
 
-        <!-- Footer -->
- <footer class="footer">©2026 Webmart</footer>
-     
+    <nav class="navbar__nav">
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+
+      <ul class="navbar__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="cards">
+    <article class="card">
+      <h2 class="card__title">Basic Plan</h2>
+      <p class="card__description">Advertise up to 5 products</p>
+    </article>
+
+    <article class="card card--pro">
+      <h2 class="card__title">Pro Plan</h2>
+      <p class="card__description">Advertise up to 10 products</p>
+    </article>
+
+    <article class="card card--enterprise">
+      <h2 class="card__title">Enterprise Plan</h2>
+      <p class="card__description">Advertise up to 20 products</p>
+    </article>
+  </section>
+
+</main>
+
+<footer class="footer">
+  ©2026 Webmart
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>

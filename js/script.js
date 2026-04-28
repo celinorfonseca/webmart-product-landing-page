@@ -1,9 +1,21 @@
-const button = document.querySelector(".menu-btn")
-const menu = document.querySelector(".navbar__links");
+console.log("JS loaded")
 
-button.addEventListener("click", () => {
-    menu.classList.toggle("active");
-});
+const menuButton = document.querySelector(".menu-btn")
+const navMenu = document.querySelector(".navbar__links");
+
+if (menuButton && navMenu) {
+    menuButton.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    });
+
+    document.addEventListener("click", (e) => {
+    if (!navMenu.contains(e.target) && !menuButton.contains(e.target)) {
+        navMenu.classList.remove("active")
+        }
+    });
+}
+
+
 
 // Modal
 
@@ -46,3 +58,34 @@ const darkBtn = document.querySelector(".dark-mode-btn");
 darkBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 });
+
+modal.addEventListener("click", (e) => {
+    if (e.target === modal){
+        modal.classList.remove("active");
+    }
+});
+
+
+// Close menu when clicking a link
+
+const links = document.querySelectorAll(".navbar_links a");
+
+links.forEach(link => {
+    link.addEventListener("click", () =>{
+        navMenu.classList.remover("active");
+    });
+});
+
+// Scroll events
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+    document.querySelector(".navbar").classList.add("scrolled");
+    } else {
+        document.querySelector(".navbar").classList.remove("scrolled");
+    }
+});
+
+const navbar = document.querySelector(".navbar");
+console.log(navbar);
+

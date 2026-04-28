@@ -3,49 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webmart*</title>
+    <title>Case Study | Webmart</title>
     <link rel="stylesheet" href="css/style.css"> 
 </head>
 
 <body>
-    <!-- Navibar -->
-    <header class="navbar"> 
+
+<!-- Navbar -->
+<header class="navbar"> 
+    <div class="navbar__container">
         <img class="navbar__logo" src="assets/images/webmart-logo-gip.png" alt="Webmart logo">
-        <nav>
+
+        <nav class="navbar__nav">
+            <button class="menu-btn" aria-label="Open menu">☰</button>
+
             <ul class="navbar__links">
-                <li><a class="navbar__home" href="index.html">Home</a></li>
-                <li><a class="navbar__contact" href="products.html">Products</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
             </ul>
         </nav>
-        </header>
+    </div>
+</header>
 
-    <section class="about-us">
-        <section class="about-us__text">
-            <h1>About Us</h1>
-            <p>We are a product of a challenge structured like a junior dev task following the aspects of a Real Portifolio-Level task.</p>
-            <p>This challenge intended to force me (the website developer) to test my programing skills with HTML and CSS.</p>
-            <p>Terms like Navbar, Hero section, work reusing, consistent naming (BEM style), responsivity with Flex and Grid, Hover and others were required to have a good result.</p>
-            <p> I home you liked it. It was really fun to make this project.</p>
+<main class="case">
 
-            <h2>If you want to contact me</h2>
-            <p>I'm always in touch on my Github and LinkedIn pages.</p>
-            <p>I'm waiting for you there!</p>
-        </section>
-
-        <section class="contact-links">
-        
-            <a href="https://github.com/celinorfonseca" target="_blank">
-                <img src="assets/images/github-logo.png" alt="Go to GitHub" class="github__button">
-            </a>
-
-            <a href="https://www.linkedin.com/in/celinor-lima-da-fonseca-junior/" target="_blank">
-                <img src="assets/images/in-logo.png" alt="Go to Linkedin" class="linkedin__button">
-            </a>
-        </section>
+    <!-- HERO / INTRO -->
+    <section class="case__hero">
+        <h1>Webmart — Product Landing Page</h1>
+        <p>
+            A responsive front-end project focused on building reusable UI components 
+            and applying modern layout techniques with HTML, CSS, and JavaScript.
+        </p>
     </section>
-     
-    <!-- Footer -->
-    <footer class="footer">©2026 Webmart</footer>
-     
+
+    <!-- OVERVIEW -->
+    <section class="case__section">
+        <h2>Overview</h2>
+        <p>
+            This project was developed as a self-driven challenge to simulate a 
+            real-world junior front-end task. The objective was to design and build 
+            a multi-page website with a clean structure, reusable components, and 
+            interactive behavior.
+        </p>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="case__section">
+        <h2>Problem</h2>
+        <p>
+            As a beginner developer, one of the main challenges is moving beyond 
+            static pages and learning how to structure scalable and maintainable code.
+        </p>
+
+        <p>
+            The project aimed to solve the following:
+        </p>
+
+        <ul>
+            <li>How to structure HTML semantically</li>
+            <li>How to build reusable UI components</li>
+            <li>How to organize CSS using a consistent methodology</li>
+            <li>How to introduce interactivity using JavaScript</li>
+        </ul>
+    </section>
+
+    <!-- SOLUTION -->
+    <section class="case__section">
+        <h2>Solution</h2>
+        <p>
+            The solution was to develop a complete landing page with multiple sections, 
+            focusing on clarity, responsiveness, and modular design.
+        </p>
+
+        <ul>
+            <li>Reusable card components for pricing plans</li>
+            <li>Responsive navigation with mobile menu</li>
+            <li>Hero section for primary messaging</li>
+            <li>Modal and form interactions using JavaScript</li>
+        </ul>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="case__section">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>HTML5 (semantic structure)</li>
+            <li>CSS3 (Flexbox, Grid, BEM methodology)</li>
+            <li>JavaScript (DOM manipulation, events)</li>
+        </ul>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="case__section">
+        <h2>Development Process</h2>
+        <p>
+            The project was built incrementally, starting from basic layout structure 
+            and evolving into a more refined and interactive interface.
+        </p>
+
+        <ol>
+            <li>Initial HTML structure (layout and sections)</li>
+            <li>Styling with CSS (layout, spacing, colors)</li>
+            <li>Refactoring using BEM methodology</li>
+            <li>Adding interactivity with JavaScript</li>
+            <li>Code cleanup and organization for maintainability</li>
+        </ol>
+    </section>
+
+    <!-- CHALLENGES -->
+    <section class="case__section">
+        <h2>Challenges & Learnings</h2>
+        <ul>
+            <li>Understanding how to properly structure reusable components</li>
+            <li>Managing CSS organization as the project grew</li>
+            <li>Implementing responsive behavior across screen sizes</li>
+            <li>Integrating JavaScript without breaking layout</li>
+        </ul>
+
+        <p>
+            This project significantly improved my understanding of how front-end 
+            systems are structured in real-world scenarios.
+        </p>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="case__section">
+        <h2>Results</h2>
+        <p>
+            The final result is a responsive, multi-page landing page that demonstrates 
+            core front-end development skills, including layout design, component reuse, 
+            and basic interactivity.
+        </p>
+    </section>
+
+    <!-- NEXT STEPS -->
+    <section class="case__section">
+        <h2>Future Improvements</h2>
+        <ul>
+            <li>Add persistent dark mode (localStorage)</li>
+            <li>Improve animations and transitions</li>
+            <li>Enhance accessibility (ARIA, keyboard navigation)</li>
+            <li>Refactor into modular JavaScript files</li>
+        </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="case__section case__contact">
+        <h2>Contact</h2>
+        <p>
+            You can find more of my work or connect with me through:
+        </p>
+
+        <div class="case__links">
+            <a href="https://github.com/celinorfonseca" target="_blank" rel="noopener">
+                <img src="assets/images/github-logo.png" alt="GitHub profile">
+            </a>
+
+            <a href="https://www.linkedin.com/in/celinor-lima-da-fonseca-junior/" target="_blank" rel="noopener">
+                <img src="assets/images/in-logo.png" alt="LinkedIn profile">
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    ©2026 Webmart
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
